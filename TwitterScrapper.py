@@ -225,7 +225,8 @@ if __name__ == "__main__":
     while True:
         if name+'.xlsx' not in os.listdir():
             new_df.to_excel(f'{name}.xlsx')
-
+            break 
+            
         else:
             name = name[:input_name] + str(i)
             i += 1
